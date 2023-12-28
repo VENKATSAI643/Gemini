@@ -5,7 +5,7 @@ dotenv.config();
 
 // 1. Configuration
 const api_key = process.env.GEMINI_API_KEY;
-const genAI = new GoogleGenerativeAI("AIzaSyCONO-2wk1PjS_pbdHq5SOJ8MQP_FPxMIE");
+const genAI = new GoogleGenerativeAI(api_key);
 const generationConfig = { temperature: 0.9, topP: 1, topK: 1, maxOutputTokens: 4096 };
 
 // 2. Initialise Model
